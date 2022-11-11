@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <title>Home</title>
+  </head>
+
+  <style>
+
+    body {
+      background-color: #000;
+      height: 0vh;
+
+    }
+    canvas {
+      display: block;
+      vertical-align: bottom;
+    }
+
+    th,td{
+      padding: 15px;
+      text-align:center;
+      color:white;
+    }
+    .center {
+      position: relative;
+      height: 10vh;
+    }
+
+    .card{
+      background: rgba(255,255,255,0);
+      margin-top:25%;
+      margin-bottom:60%;
+      margin-left:12%;
+      margin-right:20%;
+    }
+    .navbar{
+      background: rgba(255,255,255,0.3);
+      text-align:center;
+    }
+
+    /* Background animation */
+
+    #bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    /* Typewriter animation */
+
+    p {
+      border-right: solid 3px rgba(0,255,0,.75);
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 50px;
+      color: rgba(255,255,255,.70);
+    }
+
+    /* Animation */
+    p {
+      animation: animated-text 2s steps(16,end) 2s 1 normal both,
+                 animated-cursor 600ms steps(29,end) infinite;
+    }
+
+    /* text animation */
+
+    @keyframes animated-text{
+      from{width: 0;}
+      to{width: 280px;}
+    }
+
+    /* cursor animations */
+
+    @keyframes animated-cursor{
+      from{border-right-color: rgba(0,255,0,.75);}
+      to{border-right-color: transparent;}
+    }
+
+  </style>
+
+  <body>
+
+    <div id="bg"> </div>
+
+    <nav class="navbar navbar-expand-md">
+
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-white font-weight-lighter" href="/Users/pacoramirez/Desktop/ProfessionalSite/index.html">Home</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-white font-weight-lighter" href="/Users/pacoramirez/Desktop/ProfessionalSite/aboutme.html">About me</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-white font-weight-lighter" href="/Users/pacoramirez/Desktop/ProfessionalSite/portfolio.html">Portfolio</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-white font-weight-lighter" href="/Users/pacoramirez/Desktop/ProfessionalSite/contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="card">
+      <div class="center">
+        <p class="text-white font-weight-lighter"> Hello, I'm Luis. </p>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/particlesbg.js"></script>
+
+  </body>
+</html>
