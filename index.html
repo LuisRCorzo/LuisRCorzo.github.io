@@ -158,6 +158,10 @@
 
     }
 
+    .anim-moveup{
+      animation: animation-translation 1.8s ease-in 12.8s forwards; 
+    }
+
     /* text animation */
 
     @keyframes animated-text1{
@@ -253,15 +257,18 @@
       <div class="card">
         
         <div class="center">
-            <p class="anim1"> > Hi, I'm Luis. </p>
+
+            <div class="anim-moveup">
+               <p class="anim1"> > Hi, I'm Luis. </p>
             
-            <p class="anim2"> > 3 things I like to do: </p>
+               <p class="anim2"> > 3 things I like to do: </p>
+            </div>
 
-            <p class="anim3"> > - Solve problems.</p>
+            <p class="anim3"> > Help people.</p>
 
-            <p class="anim4"> > - Help people.</p>
+            <p class="anim4"> > Solve problems.</p>
 
-            <p class="anim5"> > - Build things.</p>
+            <p class="anim5"> > Build things.</p>
         
         </div>
 
