@@ -57,25 +57,30 @@
     }
     /* Typewriter animation */
 
-    p {
+
+    /* Animation */
+    .p {
+      position: relative;
       border-right: solid 3px rgba(0,255,0,.75);
       white-space: nowrap;
       overflow: hidden;
+      color: white;
+      font-weight: lighter;
       font-size: 50px;
       color: rgba(255,255,255,.70);
-    }
 
-    /* Animation */
-    p {
-      animation: animated-text 2s steps(16,end) 2s 1 normal both,
-                 animated-cursor 600ms steps(29,end) infinite;
+      animation: fadeIn 2.8s ease-in,
+                 animated-text 2.2s steps(16,end) 7.8s 1 normal both,
+                 animated-cursor 600ms steps(29,end) infinite,
+                 animation-translation 1.8s ease-in 12.8s forwards;
+
     }
 
     /* text animation */
 
     @keyframes animated-text{
-      from{width: 0;}
-      to{width: 305px;}
+      from{width: 40px;}
+      to{width: 330px;}
     }
 
     /* cursor animations */
@@ -84,6 +89,22 @@
       from{border-right-color: rgba(0,255,0,.75);}
       to{border-right-color: transparent;}
     }
+
+    @keyframes animation-translation{
+      0%{ transform: translateY(0px); }
+      100%{ transform: translateY(-230px); }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
 
   </style>
 
@@ -120,7 +141,7 @@
 
     <div class="card">
       <div class="center">
-        <p class="text-white font-weight-lighter"> Hello, I'm Luis. </p>
+          <p class="p"> > Hello, I'm Luis. </p>
       </div>
     </div>
 
