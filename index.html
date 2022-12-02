@@ -60,18 +60,25 @@
       bottom: 0;
       right: 0;
     }
-    /* Typewriter animation */
+    
+    /* iphone XS Max */
+    @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) { 
 
+
+    }
 
     /* Animation */
     .anim1 {
       position: relative;
-      border-right: solid 3px rgba(0,0,0,.75);
+      border-right: solid 4px rgba(0,0,0,.30);
       white-space: nowrap;
       overflow: hidden;
       font-weight: lighter;
-      font-size: 2.5rem;
-      color: rgba(255,255,255,.80);
+      font-size: 2.3rem;
+      color: rgba(255,255,255,.90);
 
       animation: fadeIn 2s ease-in,
                  animated-text1 2s steps(19,end) 4s 1 normal both,
@@ -80,15 +87,16 @@
 
     }
 
+    /* Typewriter animation */
     .anim2 {
       position: relative;
 
-      border-right: solid 3px rgba(0,0,0,.75);
+      border-right: solid 4px rgba(0,0,0,.30);
       white-space: nowrap;
       overflow: hidden;
       font-weight: lighter;
-      font-size: 2.5rem;
-      color: rgba(255,255,255,.80);
+      font-size: 2.3rem;
+      color: rgba(255,255,255,.90);
 
       animation: welcome-delay 9.6s normal,
                  fadeIn2 0.2s 9.6s ease-in,
@@ -101,13 +109,13 @@
     /* text animation */
 
     @keyframes animated-text1{
-      from{width: 2.3rem;}
-      to{width: 16rem;}
+      from{width: 0.8em;}
+      to{width: 5.3em;}
     }
 
     @keyframes animated-text2{
-      from{width: 2.3rem;}
-      to{width: 41rem;}
+      from{width: 0.8em;}
+      to{width: 12em;}
     }
 
     /* cursor animations */
@@ -180,7 +188,14 @@
         <div class="center">
             <p class="anim1"> > Hi, I'm Luis. </p>
             
-            <p class="anim2"> > I want to help you solve problems. </p>
+            <p class="anim2"> > 3 things I like to do: </p>
+
+            <p class="anim3"> > - Solve problems.</p>
+
+            <p class="anim4"> > - Help people.</p>
+
+            <p class="anim5"> > - Build things.</p>
+        
         </div>
 
       </div>
@@ -197,31 +212,20 @@
 
         <div class="container pt-3 my-3 text-white ">
           <h1 class="font-weight-lighter"> Luis R. Corzo <br>   </h1>
-          <h2 class="font-weight-lighter"> Software Engineer</h2>
           <h5 class="font-weight-lighter"> Computer Science (B.A.)  -   University of Colorado at Boulder. </h5>
           <br>
         </div>
 
         <br>
-        <h5 class="font-weight-lighter text-white text-left">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </h5>
+        <h5 class="font-weight-lighter text-white text-left">    Currently seeking to get experience in my passions. Everything data science, machine learning, and cybersecurity. I like asking questions and finding answers by looking at the numbers everywhere around us.</h5>
 
         <br>
         <br>
 
 
-        <img height="280px" width="235px" align="center" src="//live.staticflickr.com/3628/3465084618_f0630f7adb_h.jpg" class="main-photo" alt="Kanye West by David Shankbone | by david_shankbone">
-
         <br>
         <br>
 
-        <h3 class="font-weight-lighter text-white text-center">Github</h2>
-          <br>
-          <p class="text-center">
-             <a href="https://github.com/LuisRCorzo" class="btn btn-light font-weight-lighter" role="button"> Click here for my Github </a>
-          </p>
-
-          <br>
-          <br>
 
         <h2 class="font-weight-lighter text-white text-left">  >  Projects: </h3>
         <br>
