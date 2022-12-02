@@ -73,11 +73,11 @@
     /* Animation */
     .anim1 {
       position: relative;
-      border-right: solid 4px rgba(0,0,0,.30);
+      border-right: solid 4px rgba(0,0,0,.70);
       white-space: nowrap;
       overflow: hidden;
       font-weight: lighter;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       color: rgba(255,255,255,.90);
 
       animation: fadeIn 1s ease-in,
@@ -91,16 +91,16 @@
     .anim2 {
       position: relative;
 
-      border-right: solid 4px rgba(0,0,0,.30);
+      border-right: solid 4px rgba(0,0,0,.70);
       white-space: nowrap;
       overflow: hidden;
       font-weight: lighter;
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       color: rgba(255,255,255,.90);
 
       animation: welcome-delay 9.6s normal,
                  animated-text2 2.8s steps(28,end) 12s 1 normal both,
-                 animated-cursor 600ms steps(40,end) infinite;
+                 animated-cursor 600ms steps(40,end) 20;
                  /*animation-translation 1.8s ease-in 12.8s forwards;*/
 
     }
@@ -115,32 +115,14 @@
       font-size: 2.3rem;
       color: rgba(255,255,255,.90);
 
-      animation: welcome-delay 13s normal,
+      animation: welcome-delay 15s normal,
                  animated-text2 2.8s steps(28,end) 12s 1 normal both,
-                 animated-cursor 600ms steps(40,end) infinite;
+                 animated-cursor 600ms steps(40,end) 25;
                  /*animation-translation 1.8s ease-in 12.8s forwards;*/
 
     }
 
     .anim4 {
-      position: relative;
-
-      border-right: solid 4px rgba(0,0,0,.30);
-      white-space: nowrap;
-      overflow: hidden;
-      font-weight: lighter;
-      font-size: 2.3rem;
-      color: rgba(255,255,255,.90);
-
-      animation: welcome-delay 17s normal,
-                 fadeIn2 0.2s 9.6s ease-in,
-                 animated-text2 2.8s steps(28,end) 12s 1 normal both,
-                 animated-cursor 600ms steps(40,end) infinite;
-                 /*animation-translation 1.8s ease-in 12.8s forwards;*/
-
-    }
-
-    .anim5 {
       position: relative;
 
       border-right: solid 4px rgba(0,0,0,.30);
@@ -158,8 +140,27 @@
 
     }
 
+    .anim5 {
+      position: relative;
+
+      border-right: solid 4px rgba(0,0,0,.30);
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: lighter;
+      font-size: 2.3rem;
+      color: rgba(255,255,255,.90);
+
+      animation: welcome-delay 24s normal,
+                 fadeIn2 0.2s 9.6s ease-in,
+                 animated-text2 2.8s steps(28,end) 12s 1 normal both,
+                 animated-cursor 600ms steps(40,end) infinite;
+                 /*animation-translation 1.8s ease-in 12.8s forwards;*/
+
+    }
+
     .anim-moveup{
-      animation: animation-translation 1.8s ease-in 12.8s forwards; 
+      animation: welcome-delay 20s normal,
+                 animation-translation 1s linear 14s forwards; 
     }
 
     /* text animation */
