@@ -88,6 +88,23 @@
     }
 
     /* Typewriter animation */
+    .anim6 {
+      position: relative;
+
+      border-right: solid 4px rgba(0,0,0,.70);
+      white-space: nowrap;
+      overflow: hidden;
+      font-weight: lighter;
+      font-size: 2.4rem;
+      color: rgba(255,255,255,.90);
+
+      animation: welcome-delay2 9.6s normal,
+                 animated-text2 0.2s steps(28,end) 12s 1 normal both,
+                 animated-cursor 600ms steps(40,end) 30;
+                 /*animation-translation 1.8s ease-in 12.8s forwards;*/
+
+    }
+
     .anim2 {
       position: relative;
 
@@ -190,6 +207,11 @@
       to{width: 6em;}
     }
 
+    @keyframes animated-text6{
+      from{width: 0.8em;}
+      to{width: 6em;}
+    }
+
     /* cursor animations */
 
     @keyframes animated-cursor{
@@ -279,11 +301,13 @@
         
         <div class="center">
 
-            <div class="anim-moveup">
-               <p class="anim1"> > Hi, I'm Luis. </p>
             
-               <p class="anim2"> > 3 things I like to do: </p>
-            </div>
+            <p class="anim1"> > Hi, I'm Luis. </p>
+
+            <p class="anim6"> > </p>
+        
+            <p class="anim2"> > 3 things I like to do: </p>
+        
 
             <p class="anim3"> > Help people.</p>
 
