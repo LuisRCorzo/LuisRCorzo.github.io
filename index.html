@@ -88,6 +88,14 @@
 
     }
 
+    pre.bash {
+      font-size: medium; 
+      font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+      width: 100%;
+      display: inline-block;
+      color: rgba(255,255,255,.90);
+    }
+
     @keyframes welcome-delay{
       from{opacity: 0;}
       to{opacity: 0;}
@@ -161,7 +169,7 @@
       white-space: nowrap;
       overflow: hidden;
       font-weight: lighter;
-      font-size: 1.3em;
+      font-size: 3.7vmax;
       color: rgba(255,255,255,.90);
 
       animation: welcome-delay4 30s normal,
@@ -217,12 +225,6 @@
       100% { opacity: 0; }
     }
 
-        /* iphone XS Max */
-    @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3) { 
-
-      p{font-size: 1em;}
-    }
-
 
   </style>
 
@@ -259,12 +261,16 @@
         
         <div class="center">
 
-            
-            <p class="anim1"> > Hi, I'm Luis. </p>
-        
-            <p class="anim2"> > Let's solve problems together. </p>
+          <pre class="bash">
+            -bash-3.2$ groups 
+            unixuser feegroup figroup fogroup fumgroup
+          </pre>
+          
+          <p class="anim1"> > Hi, I'm Luis. </p>
+      
+          <p class="anim2"> > Let's solve problems together. </p>
 
-            <p class="anim3"> > How can I help? </p>
+          <p class="anim3"> > How can I help? </p>
 
         
         </div>
