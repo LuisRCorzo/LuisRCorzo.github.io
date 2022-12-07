@@ -50,7 +50,7 @@
       margin-left: 0%;
       margin-right: 0%;
       animation:
-                 animation-translation1 4s ease-in-out 26s forwards;
+                 animation-intro 2s ease-in-out forwards;
 
 
     }
@@ -60,9 +60,9 @@
       to{max-width: 100%;}
     }
 
-    @keyframes animation-translation1{
-      0%{ transform: translateY(0px); }
-      100%{ transform: translateY(-10vh); }
+    @keyframes animation-intro{
+      from{opacity: 0;}
+      to{opacity: 15%;}
     }
 
     .card2{
@@ -141,21 +141,19 @@
       border-right: solid 4px rgba(0,0,0,.0);
       white-space: nowrap;
       overflow: hidden;
-      font-size: 3vmin;
+      font-size: 2.9vmin;
       font-family:monospace;
       font-weight:lighter;
       color: rgba(255,255,255,.90);
 
-      animation: welcome-delay2 11s normal,
-                 animated-text2 2.7s steps(35,end) 12.5s 1 normal both,
-                 animated-cursor 600ms steps(40,end) 31;
-                 /*animation-translation 1.8s ease-in 12.8s forwards;*/
+      animation: welcome-delay2 0.5s ease-in,
+                
 
     }
 
     @keyframes welcome-delay2{
       from{opacity: 0;}
-      to{opacity: 0;}
+      to{opacity: 95%;}
     }
 
     @keyframes animated-text2{
