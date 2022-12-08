@@ -50,7 +50,7 @@
       margin-left: 0%;
       margin-right: 0%;
       animation:
-                 animation-intro 2s ease-in-out forwards;
+                 animation-translation1 4s ease-in 4s forwards;
 
 
     }
@@ -60,10 +60,11 @@
       to{max-width: 100%;}
     }
 
-    @keyframes animation-intro{
-      from{background-color: rgba(255,255,255,0);}
-      to{background-color: rgba(255,255,255,.5);}
+    @keyframes animation-translation1{
+      0%{ transform: translateY(0px); }
+      100%{ transform: translateY(-35vh); }
     }
+
 
     .card2{
       position: relative;
@@ -109,7 +110,7 @@
       border-right: solid 4px rgba(0,0,0,.0);
       white-space: nowrap;
       overflow: hidden;
-      font-size: 4.9vmin;
+      font-size: 4vmin;
       font-family:monospace;
       font-weight:lighter;
 
@@ -141,12 +142,12 @@
       border-right: solid 4px rgba(0,0,0,.0);
       white-space: nowrap;
       overflow: hidden;
-      font-size: 2.9vmin;
+      font-size: 3vmin;
       font-family:monospace;
       font-weight:lighter;
       color: rgba(255,255,255,.90);
 
-      animation: welcome-delay2 0.5s ease-in,
+      animation: welcome-delay2 0.5s ease-in 4s,
                 
 
     }
@@ -295,7 +296,7 @@
           <b class="anim1"> $> Welcome to the Cyb3rBl0g</b>
           <br>
 
-          <p class="anim2"> $> An experimental curation of cybersecurity related content.</p>
+          <p class="anim2"> An experimental curation of cybersecurity related content.</p>
           <br>
 
 
