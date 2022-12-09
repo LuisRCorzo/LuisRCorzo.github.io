@@ -27,10 +27,6 @@
       vertical-align: bottom;
     }
 
-    p{
-      margin-bottom: -0.5vmin;
-    }
-
 
     th,td{
       padding: 15px;
@@ -38,19 +34,25 @@
       color:white;
     }
 
+    p{
+      margin-bottom: 5px;
+    }
+
     .center {
       position: relative;
-      height: 0vh;
+      top: 0vh;
 
     }
 
     .card1{
       position: relative;
       background: rgba(255,255,255,0);
-      margin-top: 30vh;
+      top: 240px;
+      margin-top: 10px;
       margin-left: 0%;
       margin-right: 0%;
-      margin-bottom: 52vh;
+      margin-bottom: 10px;
+      
       animation:
                  animation-translation1 2s ease-in-out 14.5s forwards;
 
@@ -64,16 +66,18 @@
 
     @keyframes animation-translation1{
       0%{ transform: translateY(0px); }
-      100%{ transform: translateY(-20vh); }
+      100%{ transform: translateY(-155px); }
     }
 
     .card2{
       position: relative;
       background: rgba(255,255,255,0);
-      margin-top: 50vh;
+
+      top: 350px;
+      margin-top: 10px;
       margin-left: 0%;
       margin-right: 0%;
-      margin-bottom: 2rem;
+      margin-bottom: 10px;
 
 
       animation:
@@ -86,18 +90,20 @@
 
     @keyframes animation-translation2{
       0%{ transform: translateY(0px); }
-      100%{ transform: translateY(-58vh); }
+      100%{ transform: translateY(-270px); }
     }
 
     .card3{
       position: relative;
       background: rgba(255,255,255,0);
-      margin-top: 75vh;
+
+      top:400px;
+      margin-top: 0vh;
       margin-left: 0%;
       margin-right: 0%;
 
       animation:
-                 animation-translation2 2s ease-in-out 7s forwards;
+                 animation-translation2 2s ease-in-out 14.5s forwards;
     }
     @keyframes translation-delay3{
       from{max-width: 99%;}
@@ -106,9 +112,9 @@
 
     @keyframes animation-translation3{
       0%{ transform: translateY(0px); }
-      100%{ transform: translateY(-60vh); }
+      100%{ transform: translateY(-0vh); }
     }
-
+    
     .navbar{
       background: rgba(255,255,255,0.28);
       text-align:center;
@@ -231,15 +237,15 @@
       border-right: solid 4px rgba(0,0,0,.0);
       white-space: nowrap;
       overflow: hidden;
-      font-size: 3.7vmin;
+      font-size: 3.5vmin;
       font-family:monospace;
       font-weight:lighter;
 
       color: rgba(255,255,255,.90);
 
-      animation: welcome-delay4 16s normal,
+      animation: welcome-delay4 14s normal,
                  fadeIn 4s ease-in-out 14s,
-                 animated-text4 2s steps(28,end) 16.8s 1 normal both,
+                 animated-text4 2s steps(28,end) 17s 1 normal both,
                  animated-cursor 600ms steps(40,end) 30;
                  /*animation-translation 1.8s ease-in 12.8s forwards;*/
 
@@ -270,7 +276,7 @@
       border-right: solid 4px rgba(0,0,0,.0);
       white-space: nowrap;
       overflow: hidden;
-      font-size: 3.7vmin;
+      font-size: 3.5vmin;
       font-family:monospace;
       font-weight:lighter;
 
@@ -307,8 +313,39 @@
 
       color: rgba(255,255,255,.90);
 
-      animation: welcome-delay5 21.5s ease-in;
+      animation: welcome-delay5 21s ease-in;
 
+    }
+
+    .anim6 {
+      position: relative;
+      width: auto;
+      display: inline-block;
+      border-right: solid 4px rgba(0,0,0,.0);
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 3.6vmin;
+      font-family:monospace;
+      font-weight:lighter;
+
+      color: rgba(255,255,255,.90);
+
+      animation: welcome-delay6 23s normal,
+                 animated-text6 1.5s steps(28,end) 24s 1 normal both,
+                 animated-cursor 600ms steps(40,end) 35;
+                 /*animation-translation 1.8s ease-in 12.8s forwards;*/
+
+    }
+
+    @keyframes welcome-delay6{
+      from{opacity: 0;}
+      to{opacity: 0;}
+    }
+
+
+    @keyframes animated-text6{
+      from{max-width: 6.5vmin;}
+      to{max-width: 100%;}
     }
 
 
@@ -390,21 +427,20 @@
           <br>
           <pre class="aboutme">
 
+                                ☺/
+    - Luis R. Corzo            /|
+                               / \
 
-                                  ☺/
-  - Luis R. Corzo                /|
-                                 / \
+Computer Science (B.A.) - University of Colorado Boulder
 
-  Computer Science (B.A.) - University of Colorado Boulder
+        Passionate about everything data science, 
+  machine learning and cybersecurity. I like finding 
+  answers to questions by looking at the numbers 
+  everywhere around us. I'm always looking for new
+  opportunities to help, solve problems, collaborate,
+  learn and build things.
 
-          Passionate about everything data science, 
-    machine learning and cybersecurity. I like finding 
-    answers to questions by looking at the numbers 
-    everywhere around us. I'm always looking for new
-    opportunities to help, solve problems, collaborate,
-    learn and build things.
- 
-          Always keep on learning.
+         Always keep on learning.
 
           </pre>
           <br>
@@ -413,10 +449,11 @@
 
       <div class="card3">
 
-        <p class="anim6"> $>  Things I've worked on: </p>
+        <p class="anim6"> $>  Projects I've worked on: </p>
+        <br>
         <br>
         <table class="table">
-
+          <br>
           <thead>
             <tr>
                 <th> Name of Project </th> <th> Technologies Used </th>
@@ -449,4 +486,3 @@
 
   </body>
 </html>
-
